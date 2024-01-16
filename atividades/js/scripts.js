@@ -1,13 +1,15 @@
 
-var titulo = document.querySelector('#titulo');
-const segundoTitulo = document.querySelector('a');
-const terceiroTitulo = document.querySelector('h1');
-var listaordenada = document.querySelector('#listaordenarda')
+var titulo = document.getElementById('#titulo');
+const listaNaoOrdenada = document.querySelector('ul');
+const link = document.getElementById('link');
+var listaordenada = document.getElementById('#listaordenarda')
 
 titulo.innerText = 'Bem vindo ao mundo Tech';
-segundoTitulo.innerText = 'Saiba três passos para entrar nesse mundo'
-terceiroTitulo.innerHTML = '<ul><li> Estude muito</li><li> Faça faculdade</li><li> Faça projetos </li></ul>'
+link.innerText = 'Link para ProZ Educação'
 
-if (listaordenada){
-listaordenada.innerHTML = 'www.instagram.com.br, www.facebook.com.br, www.twitter.com.br'
-}
+listaNaoOrdenada.innerHTML = '<li>Onde pesquisar</li><li>Aprenda sobre JS</li><li>Sobre DOM</li>';
+
+listaordenada.innerHTML = 
+'<li><a www.google.com.br></a></li>'
+'<li><a www.instagram.com.br></a></li>'
+'<li><a www.facebook.com.br></a></li>';
